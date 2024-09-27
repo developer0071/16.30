@@ -199,3 +199,61 @@ label{
         height: 200px;
         background: black;
 }
+.cloack{
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    float: left;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 8px solid rgb(121, 121, 121);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 
+    0 0 10px rgb(170, 170, 170),
+    inset 0 0 7px rgb(170, 170, 170),
+    0 0 15px rgb(170, 170, 170);
+  }
+  
+  .wing1{  
+    position: absolute;
+    border-radius: 25%;
+    background: rgb(170, 170, 170);
+    height: 130px;
+    width: 13px;
+    border-left: 10px solid rgb(124, 122, 122);
+    animation: animate 9s linear infinite;
+    box-shadow: 
+    0 0 5px grey,
+    0 0 8px grey,
+    0 0 4px grey;
+  }
+  .wing2{
+    position: absolute;
+    border-radius: 25%;
+    background: rgb(170, 170, 170);
+    height: 130px;
+    width: 13px;
+    border-left: 10px solid rgb(124, 122, 122);
+    animation: animates 8s linear infinite;
+  }
+  @keyframes animate{
+    0%{
+      transform: rotate(120deg);
+    }
+    100%{
+      transform: rotate(3000deg);
+    }
+  } 
+  @keyframes animates{
+    0%{
+      transform: rotate(120deg);
+    }
+    100%{
+      transform: rotate(300deg);
+    }
+  }
+  
