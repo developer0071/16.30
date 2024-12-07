@@ -170,3 +170,27 @@ h1 {
         height: 100px; /* Further increased height for larger screens */
     }
 }
+      .snowflake {
+            position: absolute;
+            top: -10px;
+            z-index: 0; /* Set z-index to 0 to place behind other content */
+            color: #ffffff; /* White snowflakes */
+            font-size: 1em;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Example container to demonstrate the effect */
+        .content {
+            position: relative;
+            z-index: 1; /* Set z-index higher than snowflakes */
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
